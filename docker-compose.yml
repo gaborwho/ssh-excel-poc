@@ -1,0 +1,7 @@
+sftp:
+    image: atmoz/sftp
+    volumes:
+          - ./share:/home/user/share
+    ports:
+        - "2222:22"
+    command: user:pass
