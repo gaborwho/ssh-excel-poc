@@ -11,14 +11,12 @@ const bufferStream = new streamBuffers.WritableStreamBuffer();
 
 sftp.getStream('/share/file.xlsx', bufferStream)
   .then(success => {
-    console.log('success:', success);
     const buffer = bufferStream.getContents();
     const workbook = XLSX.read(bufferToString(buffer), { type: 'binary' });
     const firstSheetName = workbook.SheetNames[0];
-    console.log('sheet name:', firstSheetName);
     const worksheet = workbook.Sheets[firstSheetName];
-    const cellValue = worksheet['A1'].v;
-    console.log('A1 value:', cellValue);
+    const sheetValues = XLSX.utils.sheet_to_json(worksheet);
+    console.log(JSON.stringify(sheetValues, null, 2));
   })
   .catch(e => console.log(e));
 
