@@ -1,0 +1,20 @@
+{
+  "name": "ssh-excel-poc",
+  "version": "1.0.0",
+  "description": "Proof of concept fetching Excel files to objects through SSH",
+  "main": "fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaborwho/ssh-excel-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaborwho/ssh-excel-poc/issues"
+  },
+  "homepage": "https://github.com/gaborwho/ssh-excel-poc#readme",
+  "engine": "5.9.0"
+}
