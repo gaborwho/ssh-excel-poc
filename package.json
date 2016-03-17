@@ -16,5 +16,8 @@
     "url": "https://github.com/gaborwho/ssh-excel-poc/issues"
   },
   "homepage": "https://github.com/gaborwho/ssh-excel-poc#readme",
-  "engine": "5.9.0"
+  "engine": "5.9.0",
+  "dependencies": {
+    "sftp-promises": "1.3.0"
+  }
 }
